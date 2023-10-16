@@ -1,0 +1,80 @@
+form HumanRobot.h
+
+cheetah._bodyMass = 20;
+cheetah._bodyLength = 0.19 * 2;
+cheetah._bodyWidth = 0.049 * 2;
+cheetah._bodyHeight = 0.05 * 2;
+cheetah._abadGearRatio = 6;
+cheetah._hipGearRatio = 6;
+cheetah._kneeGearRatio = 9.33;
+cheetah._abadLinkLength = 0.062;
+cheetah._hipLinkLength = 0.209;
+//cheetah._kneeLinkLength = 0.175;
+//cheetah._maxLegLength = 0.384;
+cheetah._kneeLinkY_offset = 0.004;
+//cheetah._kneeLinkLength = 0.20;
+cheetah._kneeLinkLength = 0.195;
+cheetah._maxLegLength = 0.409;
+
+
+cheetah._motorTauMax = 3.f;
+cheetah._batteryV = 24;
+cheetah._motorKT = .05;  // this is flux linkage * pole pairs
+cheetah._motorR = 0.173;
+cheetah._jointDamping = .01;
+cheetah._jointDryFriction = .2;
+//cheetah._jointDamping = .0;
+//cheetah._jointDryFriction = .0;
+
+form Quadruped.h
+/*! Hunman robot
+ * Basic parameters for a Hunman robot
+ 
+namespace cheetah {
+constexpr size_t num_act_joint = 31;
+constexpr size_t num_q = 19;
+constexpr size_t dim_config = 18;
+constexpr size_t num_head = 1;
+constexpr size_t num_head_joint = 3;
+constexpr size_t num_waist = 1;
+constexpr size_t num_waist_joint = 4;
+constexpr size_t num_arm = 2;
+constexpr size_t num_arm_joint = 6;
+constexpr size_t num_leg = 2;
+constexpr size_t num_leg_joint = 6;
+}  // namespace cheetah
+
+
+ * Link indices for Hunman robot
+
+namespace linkID {
+constexpr size_t FR = 9;   // Front Right Foot
+constexpr size_t FL = 11;  // Front Left Foot
+constexpr size_t HR = 13;  // Hind Right Foot
+constexpr size_t HL = 15;  // Hind Left Foot
+
+constexpr size_t FR_abd = 2;  // Front Right Abduction
+constexpr size_t FL_abd = 0;  // Front Left Abduction
+constexpr size_t HR_abd = 3;  // Hind Right Abduction
+constexpr size_t HL_abd = 1;  // Hind Left Abduction
+}  // namespace linkID
+ */
+
+   // These should come from the inferface
+  T maxRoll = 0.4;
+  T minRoll = -0.4;
+  T maxPitch = 0.4;
+  T minPitch = -0.4;
+  T maxVelX = 3.0;
+  T minVelX = -3.0;
+  //T maxVelX = 5.0;
+  //T minVelX = -5.0;
+  T maxVelY = 2.0;
+  T minVelY = -2.0;
+  //T maxVelY = 0.5;
+  //T minVelY = -0.5;
+  T maxTurnRate = 2.5;
+  T minTurnRate = -2.5;
+  //T maxTurnRate = 0.5;
+  //T minTurnRate = -0.5;
+
