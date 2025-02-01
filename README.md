@@ -5,7 +5,9 @@ Hardware:
 
 2 to 3 mit spine. (SPI) 
 
-Around 30 motor{8030 drone motor and 15030 drone motor/ gear 1:6}. (CAN bus) 
+Battery: 24v 20000mah
+
+Around 34 motor{8030 drone motor and 15030 drone motor/ gear 1:6}. (CAN bus) 
 
 Nvidia nano or orin nx(Optional). 
 
